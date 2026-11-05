@@ -1,0 +1,11 @@
+node_modules
+dist
+
+# база с API-ключами и историей — никогда не коммитить
+data/
+
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

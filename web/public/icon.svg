@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="crispEdges">
+  <rect width="64" height="64" fill="#0000aa"/>
+  <rect x="3" y="3" width="58" height="58" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <rect x="7" y="7" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <!-- три узла и связи: руководитель и два исполнителя -->
+  <path d="M32 22v8M20 30h24M20 30v8M44 30v8" stroke="#55ffff" stroke-width="3" fill="none"/>
+  <rect x="26" y="13" width="12" height="10" fill="#ffff55"/>
+  <rect x="14" y="38" width="12" height="10" fill="#55ff55"/>
+  <rect x="38" y="38" width="12" height="10" fill="#ff55ff"/>
+</svg>

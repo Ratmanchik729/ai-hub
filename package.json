@@ -1,0 +1,45 @@
+{
+  "name": "ai-hub",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Веб-интерфейс для работы с нейросетями и командами ИИ-агентов: Claude, ChatGPT, DeepSeek, Grok, Gemini, Ollama и любые OpenAI-совместимые API. Офис с редактируемой оргструктурой, делегирование задач, тема в стиле TempleOS.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "node --env-file-if-exists=.env --watch server/index.ts",
+    "dev:web": "vite",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.ts",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.4.0",
+    "@hono/node-server": "2.1.6",
+    "hono": "4.13.16",
+    "openai": "7.50.0"
+  },
+  "devDependencies": {
+    "@fontsource/comfortaa": "^5.3.0",
+    "@fontsource/nunito": "^5.3.0",
+    "@fontsource/oswald": "^5.3.0",
+    "@fontsource/pixelify-sans": "^5.3.0",
+    "@fontsource/press-start-2p": "^5.3.0",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.2.1",
+    "@xyflow/react": "^12.12.1",
+    "concurrently": "10.0.6",
+    "highlight.js": "11.12.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-markdown": "10.1.0",
+    "rehype-highlight": "7.0.2",
+    "remark-gfm": "4.0.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}
